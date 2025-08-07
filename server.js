@@ -1026,9 +1026,6 @@ app.delete('/api/transfers/:id', async (req, res) => {
   }
 });
 
-const dashboardRoutes = require('./routes/dashboard');
-app.use('/api/dashboard', dashboardRoutes);
-
 // Add more endpoints here (POST, PUT, DELETE, etc.)
 
 // Start server
