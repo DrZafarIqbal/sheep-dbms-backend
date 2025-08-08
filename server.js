@@ -10,6 +10,10 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+const dashboardRoutes = require('./routes/dashboard');
+app.use('/api/dashboard', dashboardRoutes);
+
+
 // PostgreSQL connection using Neon
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
